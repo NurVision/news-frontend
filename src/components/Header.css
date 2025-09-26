@@ -1,0 +1,95 @@
+/* Umumiy Header Stili */
+.site-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+/* 1. Asosiy Menyu Stili */
+.main-navbar {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.main-navbar .navbar-container {
+    height: 70px;
+    justify-content: space-between;
+}
+
+.navbar-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40;
+    text-decoration: none;
+}
+
+.navbar-menu-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #495057;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    color: #ffffff;
+}
+
+/* 2. Kategoriyalar Menyusi Stili */
+.category-navbar {
+    background-color: #f8f9fa;
+}
+
+.category-navbar .navbar-container {
+    height: 50px;
+    justify-content: center; /* Kategoriyalarni markazga to'g'rilaydi */
+    gap: 30px;
+    overflow-x: auto; /* Agar kategoriyalar sig'masa, yon tomonga scroll bo'ladi */
+}
+
+.category-link {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.category-link:hover {
+    color: #007bff;
+}
+
+/* NavLink'ning aktiv holati uchun stil */
+.category-link.active {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}

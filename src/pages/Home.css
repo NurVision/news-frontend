@@ -1,0 +1,57 @@
+/* src/pages/HomePage.css */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.articles-grid {
+    display: grid;
+    /* Har bir ustun kamida 320px bo'lsin va sig'ganicha joylashsin */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Maqola kartochkasi uchun maxsus stillar */
+.article-card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Rasm sig'may qolsa, qirqib to'g'rilaydi */
+}
+
+/* .card-body ichidagi elementlarni vertikal cho'zish uchun */
+.article-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Kartochka balandligini to'ldirib turadi */
+}
+
+.article-card .card-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    /* Agar sarlavha uzun bo'lsa, pastga tushib ketmasligi uchun */
+    min-height: 56px; 
+}
+
+.article-card .card-title a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.article-card .card-title a:hover {
+    color: var(--accent-color);
+}
+
+.article-card .card-text {
+    flex-grow: 1; /* O'rtadagi bo'sh joyni to'ldiradi */
+    color: var(--text-secondary-color);
+}
+
+.article-card .card-meta {
+    font-size: 0.85rem;
+    color: var(--text-secondary-color);
+    margin-top: 15px;
+}

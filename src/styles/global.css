@@ -1,0 +1,45 @@
+/* Google Fonts'dan shriftlarni import qilish */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Inter:wght@400;500;700&display=swap');
+
+/* Butun sayt uchun ishlatiladigan CSS o'zgaruvchilari (Variables)
+  Bu bizga ranglarni va shriftlarni bir joydan boshqarish imkonini beradi.
+*/
+:root {
+  --primary-font: 'Inter', sans-serif; /* Sarlavhalar, tugmalar va meta-ma'lumotlar uchun */
+  --serif-font: 'Lora', serif;       /* Asosiy matn uchun */
+  
+  --text-color: #212121;           /* Asosiy matn rangi */
+  --meta-color: #6c757d;           /* Muallif, sana kabi ikkinchi darajali matnlar uchun */
+  --border-color: #e9ecef;         /* Ajratuvchi chiziqlar uchun */
+  --background-color: #f8f9fa;     /* Saytning orqa fon rangi */
+  --component-bg-color: #ffffff;   /* Kartochkalar va asosiy bloklar foni */
+
+  --accent-color: #6a0dad;         /* Asosiy brend rangi (binafsha) */
+  --accent-color-hover: #530a85;   /* Tugma bosilgandagi rang */
+  --danger-color: #dc3545;         /* O'chirish tugmasi kabi xavfli amallar uchun */
+}
+
+/* Saytning asosiy tanasi uchun stillar */
+body {
+    margin: 0;
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Umumiy stillar */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,109 @@
+/* ---------------------------------- */
+/* UMUMIY FORMA STILLARI     */
+/* ---------------------------------- */
+
+/* Formani o'rab turuvchi tashqi konteyner */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+    max-width: 750px; /* Formaning maksimal kengligi */
+    margin: 40px auto; /* Markazga joylashtirish */
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--text-color-dark);
+    font-weight: 600;
+}
+
+/* Har bir form elementini o'rab turuvchi blok (label + input) */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+/* Barcha input, textarea, select elementlari uchun umumiy stil */
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    background-color: #f8f9fa;
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+    background-color: #fff;
+}
+
+textarea.form-control {
+    resize: vertical; /* Faqat vertikal o'zgartirishga ruxsat */
+    min-height: 120px;
+}
+
+/* Yonma-yon joylashgan form elementlari uchun */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Rasm yuklash inputi ostidagi yordamchi matn uchun */
+.form-text {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-top: 5px;
+}
+
+.form-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.form-text a:hover {
+    text-decoration: underline;
+}
+
+/* react-select komponenti uchun qo'shimcha stillar */
+.react-select-container .react-select__control {
+    min-height: 48px;
+    border-color: #ced4da;
+    background-color: #f8f9fa;
+    box-shadow: none;
+}
+
+.react-select-container .react-select__control--is-focused {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.react-select-container .react-select__multi-value {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr; /* Kichik ekranlarda ustma-ust bo'ladi */
+    }
+    .form-container {
+        padding: 20px;
+    }
+}
+

@@ -1,0 +1,143 @@
+/* ---------------------------------- */
+/* UMUMIY LAYOUT VA NAVBAR STILLARI   */
+/* ---------------------------------- */
+
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Orqa fon uchun yengil rang */
+}
+
+.navbar {
+    background-color: #ffffff;
+    padding: 0 20px;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 70px; /* Navbar balandligi */
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Havolalar orasidagi masofa */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 0;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Aktiv (ayni paytda ochiq) sahifa uchun chiziqcha */
+.nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Chiqish tugmasi uchun alohida stil */
+.logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit; /* Asosiy shriftni olish */
+    padding: 8px 15px;
+    background-color: var(--primary-color-light);
+    color: var(--primary-color);
+    border-radius: 6px;
+}
+
+.logout-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.main-content {
+    flex-grow: 1; /* Sahifaning qolgan qismini to'liq egallash */
+}
+
+/* Layout.css faylingizga qo'shing */
+
+/* Kategoriyalar Menyusi Stili */
+.category-navbar {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0 20px;
+}
+
+.category-navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 50px;
+    overflow-x: auto; /* Agar sig'masa, scroll paydo bo'ladi */
+}
+
+.category-link {
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 15px 0;
+    white-space: nowrap; /* Kategoriya nomi bir qatorda turishi uchun */
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.category-link:hover {
+    color: #007bff;
+}
+
+/* NavLink'ning aktiv holati uchun stil */
+.category-link.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+/* Asosiy kontent uchun ozgina yuqoridan joy */
+.main-content {
+    padding-top: 20px;
+}
+
+/* Mavjud container klassingiz bo'lsa, bu shart emas */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}

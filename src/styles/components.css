@@ -1,0 +1,132 @@
+/* ==========================================================================
+   Umumiy Konteynerlar
+   ========================================================================== */
+
+/* Har bir sahifaning asosiy kontenti uchun umumiy konteyner */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Maqola kabi o'qish uchun mo'ljallangan torroq konteyner */
+.container-readable {
+    max-width: 750px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: var(--component-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+/* ==========================================================================
+   Tugmalar (Buttons)
+   ========================================================================== */
+
+.btn {
+    display: inline-block;
+    font-family: var(--primary-font);
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--accent-color);
+    color: white;
+}
+.btn-primary:hover {
+    background-color: var(--accent-color-hover);
+    color: white; /* :hover da text-decoration: underline bo'lmasligi uchun */
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+.btn-danger:hover {
+     background-color: #c82333;
+     color: white;
+}
+
+.btn-secondary {
+    background-color: #e9ecef;
+    color: #495057;
+}
+.btn-secondary:hover {
+    background-color: #ced4da;
+    color: #212121;
+}
+
+.btn-danger-outline {
+    background: none;
+    color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+.btn-danger-outline:hover {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+
+/* ==========================================================================
+   Formalar (Forms)
+   ========================================================================== */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    resize: vertical;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box; /* padding'ni hisobga olish uchun */
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(106, 13, 173, 0.15);
+}
+
+
+/* ==========================================================================
+   Boshqa komponentlar
+   ========================================================================== */
+
+/* Teglar uchun pilla (pill) uslubi */
+.tag-pill {
+    font-family: var(--primary-font);
+    background-color: #e9ecef;
+    color: var(--meta-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+}
+
+.tag-pill:hover {
+    background-color: #ced4da;
+    color: var(--text-color);
+}

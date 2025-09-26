@@ -1,0 +1,20 @@
+/* ---------------------------------- */
+/* KIRISH VA RO'YXATDAN O'TISH SAHIFALARI UCHUN MAXSUS STILLAR */
+/* ---------------------------------- */
+
+/* Butun sahifani egallab, formani markazga keltiruvchi konteyner */
+.login-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px); /* Navbar va biroz bo'sh joyni hisobga olgan holda */
+    padding: 20px;
+}
+
+/* Formaning o'zini o'rab turuvchi konteynerga qo'shimcha stillar */
+.login-form-container {
+    width: 100%;
+    max-width: 450px; /* Kirish formasi uchun ixchamroq kenglik */
+    margin: 0; /* Yuqoridagi flex markazlashtirgani uchun margin kerak emas */
+}
+
