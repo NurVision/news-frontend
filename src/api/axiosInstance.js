@@ -4,7 +4,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode'; // <-- O'ZGARTIRILGAN IMPORT
 import dayjs from 'dayjs';
 
-const baseURL = 'http://127.0.0.1:8000/api/v1/';
+const baseURL = 'http://144.91.124.3/';
 
 let accessToken = localStorage.getItem('access_token') ? localStorage.getItem('access_token') : null;
 
@@ -16,7 +16,6 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(async req => {
     accessToken = localStorage.getItem('access_token') ? localStorage.getItem('access_token') : null;
-
     if (accessToken) {
         req.headers.Authorization = `Bearer ${accessToken}`;
         
