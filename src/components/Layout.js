@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
                 const response = await axiosInstance.get('article/categories/');
                 setCategories(response.data.results || response.data);
             } catch (error) {
-                console.error("Kategoriyalarni yuklashda xatolik:", error);
+                console.error("Kategoriyalarni yuklashda xatolik:", error.response.data);
             }
         };
         fetchCategories();

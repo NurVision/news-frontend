@@ -4,7 +4,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode'; // <-- O'ZGARTIRILGAN IMPORT
 import dayjs from 'dayjs';
 
-const baseURL = 'http://144.91.124.3/';
+const baseURL = 'http://144.91.124.3:8001/api/v1/';
 
 let accessToken = localStorage.getItem('access_token') ? localStorage.getItem('access_token') : null;
 
